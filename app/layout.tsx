@@ -20,15 +20,15 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#1B1C1E] text-[#c8c8c8] font-montserrat">
         <nav className="flex h-[100px] text-[14px] items-center px-[3rem] justify-between">
-          {/* <Link href="/">
+          { <Link href="/">
             <Image
-              src="./gitpt-logo.svg"
-              alt="gitpt-logo"
-              width={48}
+              src="/vibewire.png"
+              alt="verbify-logo"
+              width={150}
               height={48}
               className="cursor-pointer text-white"
             />
-          </Link> */}
+          </Link> }
 
           <div className="flex gap-[3rem] items-center">
             <Link
