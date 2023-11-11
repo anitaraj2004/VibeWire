@@ -43,6 +43,12 @@ export default function RootLayout({
             >
               About
             </Link>
+            <Link
+              href="/marketplace"
+              className="cursor-pointer hover:text-white transition-all"
+            >
+              Marketplace
+            </Link>
             {/* <Link
               href="/explore"
               className="font-bold bg-white text-[#1B1C1E] px-[1.5rem] py-[1rem] rounded-md cursor-pointer hover:bg-[rgba(0,0,0,0)] hover:text-white hover:fill-white border-[1px] transition-all"
