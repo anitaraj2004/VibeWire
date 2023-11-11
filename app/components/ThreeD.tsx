@@ -1,7 +1,7 @@
 "use client";
 
 import * as THREE from "three";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Texture } from "react";
 
 const ThreeD = () => {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -22,8 +22,13 @@ const ThreeD = () => {
       }
 
       const centralCubeGeometry = new THREE.IcosahedronGeometry(5, 0);
-      const centralCubeMaterial = new THREE.MeshBasicMaterial({
+      const normalTexture = new THREE.TextureLoader().load(
+        '/public/next.svg'
+    )
+      const centralCubeMaterial = new THREE.MeshStandardMaterial({
         color: 0x6b669f,
+        emissive: 0x6b669f,
+        normalMap: normalTexture,
         wireframe: true,
       });
       const centralCube = new THREE.Mesh(centralCubeGeometry, centralCubeMaterial);
