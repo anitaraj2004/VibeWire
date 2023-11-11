@@ -19,7 +19,7 @@ export default function Home() {
               href="/explore"
               className="font-bold bg-[rgba(0,0,0,0)] px-[2.5rem] py-[2rem] rounded-md cursor-pointer hover:bg-[rgba(0,0,0,0)] hover:text-white hover:fill-white border-[1px] transition-all"
             >
-              Explore Marketplace
+              Start Verifying!
             </Link>
       </div>
       {/* <div className="flex flex-col items-center justify-end h-full">
