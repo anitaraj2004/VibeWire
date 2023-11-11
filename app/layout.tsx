@@ -22,10 +22,10 @@ export default function RootLayout({
         <nav className="flex h-[100px] text-[14px] items-center px-[3rem] justify-between">
           { <Link href="/">
             <Image
-              src="/vibewire.png"
+              src="/vibewire_white.png"
               alt="verbify-logo"
-              width={150}
-              height={48}
+              width={170}
+              height={68}
               className="cursor-pointer text-white"
             />
           </Link> }

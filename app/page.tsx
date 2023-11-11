@@ -14,10 +14,35 @@ export default function Home() {
         <ThreeD />
 
       </div>
+    
+      <div className="mt-20">
+        {/* Assuming your-image.png is in the public folder */}
+        <img
+          // src="/vibewire_white.png"
+          // alt="Description of your image"
+          // className="w-100 h-48 rounded-full"
+        />
+      </div>
+      <div className="mt-20">
+        {/* Assuming your-image.png is in the public folder */}
+        <img
+          // src="/vibewire_white.png"
+          // alt="Description of your image"
+          // className="w-100 h-48 rounded-full"
+        />
+      </div>
+      <div className="mt-40">
+        {/* Assuming your-image.png is in the public folder */}
+        <img
+          src="/vibewire_white.png"
+          alt="Description of your image"
+          className="w-70 h-50 rounded-full"
+        />
+      </div>
       <div  className="mt-25">
       <Link
               href="/explore"
-              className="font-bold bg-[rgba(0,0,0,0)] px-[2.5rem] py-[2rem] rounded-md cursor-pointer hover:bg-[rgba(0,0,0,0)] hover:text-white hover:fill-white border-[1px] transition-all"
+              className="font-bold bg-[rgba(0,0,0,0)] px-[2.5rem] py-[2rem] rounded-md cursor-pointer hover:bg-[rgba(0,0,0,0)] hover:text-white hover:fill-white border-[1px] transition-all" //bg-white text-[#1B1C1E]
             >
               Start Verifying!
             </Link>
@@ -30,5 +55,6 @@ export default function Home() {
         <div className=""> Safeguarding Art, Unleashing Identity – Your Masterpiece, Your Blockchain </div>
       </div> */}
     </main>
+    
   )
 }
