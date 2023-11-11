@@ -41,7 +41,7 @@ export default function RootLayout({
               href="/about"
               className="cursor-pointer hover:text-white transition-all"
             >
-              About1
+              About
             </Link>
             {/* <Link
               href="/explore"
