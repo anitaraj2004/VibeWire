@@ -1,5 +1,4 @@
 import ThreeD from './components/ThreeD'
-import {Ellipsis} from 'react-css-spinners'
 import Link from "next/link";
 
 export default function Home() {

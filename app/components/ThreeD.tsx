@@ -61,7 +61,17 @@ const ThreeD = () => {
 
         scene.add(cube);
       }
-
+      const numStars = 100;
+      const starGeometry = new THREE.SphereGeometry(0.3, 32, 32);
+      const starMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      
+      for (let i = 0; i < numStars; i++) {
+        const star = new THREE.Mesh(starGeometry, starMaterial);
+        star.position.x = Math.random() * 100 - 50;
+        star.position.y = Math.random() * 100 - 50;
+        star.position.z = Math.random() * 100 - 50;
+        scene.add(star);
+      }
       camera.position.z = 15;
 
       const animate = function () {

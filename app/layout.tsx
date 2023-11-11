@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "GitPT",
-  description: "Decoding Complex Codebases, One Chat at a Time",
+  title: "Verbify",
+  description: "",
   icons: {
     icon: "./gitpt-logo.svg",
   },
