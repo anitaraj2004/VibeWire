@@ -1,27 +1,11 @@
 'use client'
-
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
-import axios from 'axios'
+import {useState} from 'react'
 import Head from "next/head";
 import Image from "next/image";
 
-const Selection = () => {
-  const [repositories, setRepositories] = useState([])
-  const [loading, setLoading] = useState(true)
+const Post = () => {
+  
 
-  useEffect(() => {
-    axios.get('https://api.art3m1s.me/gitpt/alldocs').then((response) => {
-      console.log(response.data)
-      setRepositories(response.data)
-      setLoading(false)
-    })
-  }, [])
-
-  const router = useRouter()
-  const onClick = (id: string) => {
-    router.push(`/explore/${id}`)
-  }
   const [walletAddress, setWalletAddress] = useState("");
   const [transactionId, setTransactionId] = useState("");
   const [transactionHash, setTransactionHash] = useState("");
@@ -37,7 +21,7 @@ const Selection = () => {
               walletAddress: walletAddress,
           };
 
-          const response = await fetch("/api/mint", {
+          const response = await fetch("/mint", {
               method: "POST",
               body: JSON.stringify(data),
           }).catch(function (error) {
@@ -73,7 +57,7 @@ const Selection = () => {
               transactionId: transactionId,
           };
 
-          const response = await fetch("/api/transactionDetails", {
+          const response = await fetch("/transactionDetails", {
               method: "POST",
               body: JSON.stringify(data),
           });
@@ -215,4 +199,4 @@ const Selection = () => {
   )
 }
 
-export default Selection
+export default Post;
