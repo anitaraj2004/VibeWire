@@ -1,15 +1,19 @@
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.16 <0.9.0;
+const verbwire = require("verbwire")(process.env.VERBWIRE_API_KEY);
+const fs = require('fs');
 
-contract SimpleStorage {
-    uint storedData;
 
-    function set(uint x) public {
-        storedData = x;
+
+async function mintSimpleContractNFT(walletAddress) {
+
+    let mintParams = {
+        filePath: fs.createReadStream("./assets/VerbwireIconBlack.png"),
+        name: "NFT_name",
+        description: "yourDescription",
+        // Define your metadata below or remove it entirely for no metadata
+        data: "[{\"owner\":\"bid_history\",\"value_price\":\"inflation\"},{\"amount\":\"volume\",\"art_series\":\"transcation_coin_type\"}]",
+        contractAddress: process.env.CONTRACT_ADDRESS,
+        chain: process.env.CHAIN,
+
     }
 
-    function get() public view returns (uint) {
-        return storedData;
-    }
-}
-
+    
