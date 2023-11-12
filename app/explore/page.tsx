@@ -88,26 +88,26 @@ const Selection = () => {
 
   return (
     <>
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center py-20">
         <Head>
             <title>Mint a Verbwire NFT</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+        <main className="flex w-full flex-1 flex-col items-center justify-center px-40 text-center">
 
 
-            <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+            <div className="mt-6 flex max-w-6xl flex-wrap items-center justify-around sm:w-full">
 
 
 
                 <div className="max-w-sm rounded overflow-hidden shadow-lg">
 
                     <div className="px-6 py-4 pb-12">
-                        <h1 className="text-3xl font-bold mt-4 mb-9">
-                            Powered by{' '}
-                            <a className="text-blue-600" href="https://verbwire.com">
-                                Verbwire!
+                        <h1 className="text-6xl font-bold mt-1 mb-30">
+                            Smart Contract Powered by{' '}
+                            <a className="text-purple-500" href="https://verbwire.com">
+                                Verbwire
                             </a>
                         </h1>
                         <form className="w-full max-w-sm mt-12 pt-9 pb-9" onSubmit={handleSubmit}>
@@ -126,7 +126,7 @@ const Selection = () => {
                             </div>
 
                             <button
-                                className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded text-xl disabled:opacity-25"
+                                className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-4 px-8 rounded text-xl disabled:opacity-25"
                                 type="submit" disabled={isSubmitting}>
                                 Mint
                             </button>
@@ -197,17 +197,18 @@ const Selection = () => {
             </div>
         </main>
 
-        <footer className="flex h-24 w-full items-center justify-center border-t">
+        <header className="flex h-20 w-full items-center justify-center border-t bg-white">
             <a
-                className="flex items-center justify-center gap-2"
+                className="flex items-center justify-center gap-3"
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Powered by{' '}
-                <Image src="/Verbwire Logo Black.svg" alt="Vercel Logo" width={200} height={50} />
+                {' '}
+                <Image src="/Verbwire Logo Black.svg" alt="Vercel Logo" width={300} height={200} />
+                
             </a>
-        </footer>
+        </header>
     </div>
 
 </>
