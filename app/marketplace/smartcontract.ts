@@ -6,7 +6,7 @@ const fs = require('fs');
 async function mintSimpleContractNFT(walletAddress) {
 
     let mintParams = {
-        filePath: fs.createReadStream("./assets/VerbwireIconBlack.png"),
+        filePath: fs.createReadStream("./assets/VibeWireNFT.png"), *****
         name: "NFT_name",
         description: "yourDescription",
         // Define your metadata below or remove it entirely for no metadata
@@ -16,4 +16,4 @@ async function mintSimpleContractNFT(walletAddress) {
 
     }
 
-    
+    if (walletaddress) = ne
