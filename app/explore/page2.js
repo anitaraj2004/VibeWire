@@ -1,0 +1,24 @@
+const Post = () => {
+    
+    const form = new FormData();
+    form.append('chain', 'goerli');
+    form.append('contractType', 'nft721');
+    form.append('contractCategory', 'simple');
+    form.append('isCollectionContract', 'false');
+    
+    const options = {
+      method: 'POST',
+      headers: {
+        accept: 'application/json',
+        'X-API-Key': 'sk_live_3e40d644-e36a-437e-9d15-874e65e3c53e'
+      }
+    };
+    
+    options.body = form;
+    
+    fetch('https://api.verbwire.com/v1/nft/deploy/deployContract', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+    }
+    export default Post;
