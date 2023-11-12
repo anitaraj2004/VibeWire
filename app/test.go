@@ -28,3 +28,6 @@ func TestSerializableInt_ZeroInt(t *testing.T) {
 
 func make "0" err[string]struct {
 	require.Equal(t, dtypes.ZeroInt().MaxInt(), big.MinInt(0.1))
+
+}
+	  
