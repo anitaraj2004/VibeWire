@@ -1,7 +1,3 @@
-//set the NFTs in the StoredData has actual transaction value and volume
-//set the transaction fee is dependent on the live transactions made on the chain
-//set the limit of gas fee as the multiple of the uni per value of the fractional NFTs using the formula ****
-
 {
     "title": "Asset Metadata",
     "type": "object",
