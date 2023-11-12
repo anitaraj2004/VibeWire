@@ -9,7 +9,6 @@ async function mintSimpleContractNFT(walletAddress) {
         filePath: fs.createReadStream("./assets/VerbwireIconBlack.png"),
         name: "NFT_name",
         description: "yourDescription",
-        // Define your metadata below or remove it entirely for no metadata
         data: "[{\"owner\":\"bid_history\",\"value_price\":\"inflation\"},{\"amount\":\"volume\",\"art_series\":\"transcation_coin_type\"}]",
         contractAddress: process.env.CONTRACT_ADDRESS,
         chain: process.env.CHAIN,
