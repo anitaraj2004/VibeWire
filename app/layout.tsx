@@ -38,6 +38,12 @@ export default function RootLayout({
               Home
             </Link>
             <Link
+              href="/explore"
+              className="cursor-pointer hover:text-white transition-all"
+            >
+              Smart Contract
+            </Link>
+            <Link
               href="/about"
               className="cursor-pointer hover:text-white transition-all"
             >

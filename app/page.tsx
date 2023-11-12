@@ -41,7 +41,7 @@ export default function Home() {
       </div>
       <div  className="mt-25">
       <Link
-              href="/explore"
+              href="/verify"
               className="font-bold bg-[rgba(0,0,0,0)] px-[2.5rem] py-[2rem] rounded-md cursor-pointer hover:bg-[rgba(0,0,0,0)] hover:text-white hover:fill-white border-[1px] transition-all" //bg-white text-[#1B1C1E]
             >
               Start Verifying!

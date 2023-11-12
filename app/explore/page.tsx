@@ -105,7 +105,7 @@ const Selection = () => {
 
                     <div className="px-6 py-4 pb-12">
                         <h1 className="text-3xl font-bold mt-4 mb-9">
-                            Welcome to{' '}
+                            Powered by{' '}
                             <a className="text-blue-600" href="https://verbwire.com">
                                 Verbwire!
                             </a>
