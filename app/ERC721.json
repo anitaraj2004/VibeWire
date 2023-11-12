@@ -6,10 +6,14 @@
         "name": {
             "type": "string",
             "description": "Identifies the asset to which this NFT represents"
+            "description": "Set the NFTs in the StoredData has actual transaction value and volume"
+            "description": "Set the transaction fee is dependent on the live transactions made on the chain"
+            "description": "Set the limit of gas fee as the multiple of the uni per value of the fractional NFTs using the formula ****"
         },
         "description": {
             "type": "string",
             "description": "Describes the asset to which this NFT represents"
+
         },
         "image": {
             "type": "string",
@@ -17,3 +21,5 @@
         }
     }
 }
+
+
