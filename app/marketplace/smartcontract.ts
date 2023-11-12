@@ -15,4 +15,5 @@ async function mintSimpleContractNFT(walletAddress) {
 
     }
 
-    if (walletaddress) = ne
+    if (walletaddress) {
+        
