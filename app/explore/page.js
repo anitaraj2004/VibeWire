@@ -204,7 +204,7 @@
 
 // export default Post;
 
-// code that works 
+//code that works 
 // const Post = () => {
     
 //  const form = new FormData();
