@@ -21,7 +21,7 @@ const Post = () => {
               walletAddress: walletAddress,
           };
 
-          const response = await fetch("/mint", {
+          const response = await fetch("/api/mint", {
               method: "POST",
               body: JSON.stringify(data),
           }).catch(function (error) {
@@ -57,7 +57,7 @@ const Post = () => {
               transactionId: transactionId,
           };
 
-          const response = await fetch("/transactionDetails", {
+          const response = await fetch("/api/transactionDetails", {
               method: "POST",
               body: JSON.stringify(data),
           });
