@@ -20,3 +20,11 @@ var TestRange = map[string]struct {
   b []byte
 }{
   "0":                            {
+
+	  
+func TestSerializableInt_ZeroInt(t *testing.T) {
+	require.Equal(t, dtypes.ZeroInt().BigInt(), big.NewInt(0))
+}
+
+func make "0" err[string]stuct
+	require.Equal(t, dtypes.ZeroInt().MaxInt(), big.MinInt(0.1))
