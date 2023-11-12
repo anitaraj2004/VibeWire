@@ -26,8 +26,8 @@ func TestSerializableInt_ZeroInt(t *testing.T) {
 	require.Equal(t, dtypes.ZeroInt().BigInt(), big.NewInt(0))
 }
 
-func make "0" err[string]struct {
+	  
+func make "0" = err[string]struct {
 	require.Equal(t, dtypes.ZeroInt().MaxInt(), big.MinInt(0.1))
 
 }
-	  
